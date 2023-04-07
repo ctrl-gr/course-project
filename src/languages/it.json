@@ -1,0 +1,20 @@
+{
+  "welcome" : "Benvenuto",
+  "new": "Nuovo",
+  "edit": "Modifica",
+  "delete": "Elimina",
+  "email": "Email",
+  "phone": "Cellulare",
+  "Is Completed": "Completato",
+  "Actions": "Azioni",
+  "ToDo title": "Titolo ToDo",
+  "User Id": "ID Utente",
+  "ToDo id": "ID ToDo",
+  "save": "Salva",
+  "Username": "Nome Utente",
+  "approve": "Approva",
+  "reject": "Rifiuta",
+  "Users": "Utenti",
+  "ToDos": "ToDos",
+  "Todos and Users": "Utenti e ToDos"
+}

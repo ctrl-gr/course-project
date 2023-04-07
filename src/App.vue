@@ -1,26 +1,44 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <NavbarComponent :items="pages" :dropdown-items="dropdownPages"></NavbarComponent>
+  <LanguageSwitcher></LanguageSwitcher>
+  <RouterView></RouterView>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import NavbarComponent from "@/components/NavbarComponent";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LanguageSwitcher,
+    NavbarComponent
+  },
+  data() {
+    return {
+      pages: [
+        { name: 'Homepage', path: '/'},
+        { name: 'Users', path: '/users'},
+        { name: 'Todos', path: '/todos'},
+        { name: 'New User', path: '/new-user'},
+        { name: 'New Todo', path: '/new-todo'},
+        { name: 'Users and Todos', path: '/todos-users'},
+      ],
+      dropdownPages: [{
+        label: 'Users',
+        options: [
+          {label: 'Users', path: '/users'},
+          {label: 'New User', path: '/new-user'},
+        ]
+      }
+      ]
+    }
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -1,0 +1,29 @@
+{
+  "homepage": {
+    "welcome": "Welcome"
+  },
+  "buttons": {
+    "new": "New",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "approve": "approve",
+    "reject": "reject"
+  },
+  "users": {
+    "Email": "Email",
+    "Phone": "phone",
+    "UserId": "User Id",
+    "Actions": "Actions",
+    "Username": "Username",
+    "Users": "Users"
+  },
+  "todos": {
+    "Is Completed": "Is Completed",
+    "ToDo title": "ToDo title",
+    "User Id": "User Id",
+    "ToDo id": "ToDo id",
+    "ToDos": "ToDos",
+    "Todos and Users": "ToDos and Users"
+  }
+}
